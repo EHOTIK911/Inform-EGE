@@ -15,7 +15,7 @@
 for P in range(2,9):
     for Q in range (6,13):
         def task15(x, A):
-            return (((x in A) <= (x in P)) or (x in Q))
+            return int(((x in A) <= (x in P)) or (x in Q))
 
         for A in range (1,1000):
             Flag = True
