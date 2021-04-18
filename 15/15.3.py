@@ -5,7 +5,7 @@
 
 
 
-( (x ∈ P) → (x ∈ A)) V ( not g(x ∈ A) → (not g(x ∈ Q)))
+( (x ∈ P) → (x ∈ A)) V ( not (x ∈ A) → (not (x ∈ Q)))
 
 
 
