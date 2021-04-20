@@ -26,3 +26,5 @@ for i in range(800,901):
     if f(i) == 30:
         counter += 1
 print(counter)
+
+#Ответ: 9
