@@ -1,28 +1,10 @@
-#test
-def output(n):
-    answ = 0
-    i = 3
-    cube = i * i * i
-    maxcube = cube
-    while cube <= n:
-        if n % cube == 0:
-            answ += 1
-            maxcube = cube
-    i += 2
-    cube = i * i * i
-    print(answ, maxcube)
-
-def cnt(n):
-    answ = 0
-    i = 3
-    cube = i * i * i
-    while cube <= n:
-        if n % cube == 0:
-            answ += 1
-        i += 2
-        cube = i * i * i
-    return answ
-k = 0
-for n in range(228224, 531135 + 1):
-    if cnt(n) >= 4:
-    output(n)
+for i in range(228224, 531135 + 1):
+    d = 3
+    count, m = 0,0
+    while d*d*d <= i:
+        if i % (d*d*d) == 0:
+            count += 1
+            m = d*d*d
+        d += 2
+    if count > 3:
+        print(count, i)
