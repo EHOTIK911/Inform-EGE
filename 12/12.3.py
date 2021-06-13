@@ -14,14 +14,19 @@
 s = "5" * 500
 count = 0
 while "555" in s or "333" in s:
-
     if "333" in s:
         s = s.replace("333", "5")
-
+        count += 3
     else:
         s = s.replace("555", "3")
-    count += 3
 print(s)
 print(count)
+
+"""
+Calc. version 
+555/3 = 185 ("3") and 1 ("5")
+185/3 = 61,6 -> replace 185 ("3") and left 2 ("5") and 1 ("5") -> replace 186 ("3")
+answer : 186
+"""
 
 
