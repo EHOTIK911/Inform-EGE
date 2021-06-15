@@ -11,7 +11,7 @@ for i in range(489421, 489440 + 1):
     if i**(1/2) == int(i**(1/2)):
         continue
     for j in range(1, int(i**(1/2))+1):
-        if(i % j == 0):
+        if (i % j == 0):
             b.append(j)
             b.append(i//j)
         if len(b) > 4:

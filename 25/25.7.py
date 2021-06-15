@@ -3,18 +3,14 @@
 имеющее максимальное количество различных натуральных делителей, если таких чисел несколько — найдите минимальное из них.
 Выведите на экран количество делителей такого числа и само число.
 """
-a = []
-dell = 0
-num = 0
-for i in range(84052, 84130 + 1):
-    b = []
-    if i**(1/2) == int(i**(1/2)):
-        continue
-    for j in range(1, int(i**(1/2)) + 1):
-        if (i % j == 0):
-            dell += 1
-    if num > dell:
-        
-    if len(b) == 4:
-        a.append(b)
-print(max(a))
+max_count = 0
+max_x = 0
+for x in range(84052, 84130 + 1):
+    count = 0
+    for i in range(1, x + 1):
+        if x % i == 0:
+            count += 1
+    if count > max_count:
+        max_count = count
+        max_x = x
+    print(max_count, x)
