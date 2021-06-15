@@ -1,5 +1,5 @@
 import itertools
-
+# NOT WORK
 a = list(itertools.product('НОБЕЛИЙ', repeat = 7))
 count = 0
 for x in a:
