@@ -6,4 +6,4 @@ import itertools
 a = list(itertools.product("ТРАТАТА", repeat= 7))
 count = 0
 for x in a:
-    x[0
+    x.count("T") == 3
