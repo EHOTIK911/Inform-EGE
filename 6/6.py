@@ -1,6 +1,10 @@
+n = 0
 s = 0
-n = 6
-while n > 1:
-    s = s + n
-    n -=  1
-print(s)
+while s <= 365:
+  s = s + 33
+  n = n + 5
+print(n)
+
+# 66 сек x
+# x*2 22
+#
