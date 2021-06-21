@@ -15,4 +15,5 @@ def calc(x,a,b):
 
 x = 17 ** 5 + 85 ** 5 - 10
 x = calc(x,10,17)
+print(x)
 print(x.count('16'))

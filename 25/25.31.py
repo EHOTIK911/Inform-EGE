@@ -17,6 +17,9 @@ for i in range(174457, 174505 + 1):
             if len(b) > 2:
                 break
     if len(b) == 2:
+        for j2 in range(2, int(i**0.5)):
+            if i % j2 == 0:
+                b.append(j2)
         a.append(b)
-a.sort()
+
 print(a)

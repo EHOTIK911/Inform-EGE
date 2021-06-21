@@ -12,9 +12,10 @@
 a = '5' * 247
 
 while ('222' in a) or ('555' in a):
-    a = a.replace('222', '5', 1)
-else:
-    a = a.replace('555', '2', 1)
+    if '222' in a:
+        a = a.replace('222', '5', 1)
+    else:
+        a = a.replace('555', '2', 1)
 print(a)
 
 '''

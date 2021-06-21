@@ -13,13 +13,11 @@
 a = '5' * 400
 
 while '555' in a or '333' in a:
-    a = a.replace('555', '3', 1)
-else:
-    a = a.replace('333', '5', 1)
+    if '555' in a:
+        a = a.replace('555', '3', 1)
+    else:
+        a = a.replace('333', '5', 1)
 
 
 print(a)
 
-"""
-
-"""
