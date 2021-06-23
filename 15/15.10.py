@@ -7,16 +7,12 @@
 тождественно истинна (то есть принимает значение 1 при любом натуральном значении переменной х)?
 '''
 
-def dell(n, m):
-    return n % m == 0
+def dell(x, A):
+    return x % A == 0
 
-
-
-for a in range(1,1000):
-    Flag = False
+for A in range(1,1000):
     for x in range(1,1000):
-        if not(dell(x,16) == dell(x,24)) <= dell(x, a):
-            Flag = True
-        if Flag:
-
-            print(a)
+        if not((not (dell(x,16) == dell(x,24))) <= dell(x,A)):
+            break
+    else:
+        print(A)
