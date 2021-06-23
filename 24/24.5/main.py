@@ -5,7 +5,7 @@
 Для выполнения этого задания следует написать программу.
 Ниже приведён файл, который необходимо обработать с помощью данного алгоритма.
 '''
-f = open ("24_demo.txt")
+f = open ("C:\Users\Petr\PycharmProjects\pythonProject\Inform EGE\24\24.5\24_demo.txt")
 s = f.readline()
 
 count = 0
