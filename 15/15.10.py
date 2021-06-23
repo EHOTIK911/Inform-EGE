@@ -15,7 +15,7 @@ def dell(n, m):
 for a in range(1,1000):
     Flag = False
     for x in range(1,1000):
-        if dell(a,7) and (dell(240, x) <=((not dell(a,x)) <=(not dell(780,x)))):
+        if not(dell(x,16) == dell(x,24)) <= dell(x, a):
             Flag = True
         if Flag:
 
